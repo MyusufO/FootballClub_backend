@@ -10,7 +10,8 @@ class Player(models.Model):
     rating = models.FloatField()
     potential = models.FloatField()
 
+    class Meta:
+        app_label = 'players'
 
-
-
-
+    def __str__(self):
+        return f'{self.name} ({self.club})'

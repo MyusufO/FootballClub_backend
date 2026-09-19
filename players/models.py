@@ -1,3 +1,3 @@
-from django.db import models
+from config.models.players import Player
 
-# Create your models here.
+__all__ = ['Player']
